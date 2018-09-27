@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+
+
+/* form starting stylings ------------------------------- */
+.group {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+input {
+    font-size: 18px;
+    padding: 5px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+}
+
+    input:focus {
+        outline: none;
+    }
+
+/* LABEL ======================================= */
+label {
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: white;
+}
+
+/* BOTTOM BARS ================================= */
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+    .bar:before, .bar:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        bottom: 1px;
+        position: absolute;
+        background: #fff;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    .bar:before {
+        left: 50%;
+    }
+
+    .bar:after {
+        right: 50%;
+    }
+
+
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: #fff;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from {
+        background: #fff;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #fff;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+
+#panel {
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+	background-color: #222;
+    border-radius: 4px;
+    top: 50px;
+}
+
+/* NIGHT MODE */
+#dark{
+	border : none;
+	background : transparent;
+	padding-top : 4px;
+	padding-right : 15px;
+	color : #93979e;
+	font-size : 2em;
+}
+#dark:hover{
+	color : white;
+}
+
+.darkmode{
+  background-color: #373a3c;
+  color: black;
+  transition: background-color 1s;
+}
+/*NAVBAR STYLES*/
+.navbar-border{border-bottom: solid 2px #a3bf00;}
+.login-panel { 
+    min-width: 250px; 
+    border-top: 14px solid #0080c5;
+    border-right: 1px solid #0080c5;
+    border-bottom-right-radius:0.5em;
+    -moz-border-radius-bottomright:0.5em;
+    border-bottom: 3px solid #0080c5;
+    border-left: 1px solid #0080c5;
+    border-bottom-left-radius:0.5em;
+    -moz-border-radius-bottomleft:0.5em;
+    }
+.dropdown-header { display: block !imnportant; padding-bottom: 30px; height: 10px; }
+.login-header { font-size: 20px; font-weight: bold; display: inline; float: left; }
+.forgot-password { font-size: 10px; display: inline; float: right; vertical-align: bottom; padding-top: 10px; }
+.center-text { text-align: center; }
+.error-message { font-size: 11px; }
+.navbar-collapse i:hover,.navbar-collapse a:hover{
+	color : #a3bf00 !important;
+}
+.navbar-collapse .dropdown-menu li a{
+	background-color : #222;
+	color : #d6d6c2;
+}
+
+.navbar-collapse .dropdown-menu li a:hover{
+	background-color : #222;
+}
+
+.avatar {
+    width: 40px !important;
+    height: 40px !important;
+	margin-top: 0.6vmin !important;
+}
+@media screen and (max-height: 450px) {
+  .siden {padding-top: 15px;}
+  .siden #sidea {font-size: 18px;}
+}
+
+.wrap{
+	padding-right: 20px;
+	padding-top: 5px;
+}
+
+.sidea #close : hover{
+	color: white;
+	background-color: black;
+}
+
+h5{
+	color: white;
+}
+
+input{
+	color: white;
+}
+
+h5{
+	padding: 20px;
+}
+
+.btn-warning{
+	background: transparent;
+	border-color: #a3bf00;
+	color: #a3bf00;
+}
+
+.btn-warning:hover{
+	background: transparent;
+	border-color: white;
+}

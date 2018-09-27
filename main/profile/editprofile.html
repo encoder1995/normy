@@ -1,0 +1,188 @@
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<script src="../feed/night.js" type="text/javascript"></script>
+<link href="editprofile.css" rel="stylesheet" >
+<!------ Include the above in your HEAD tag ---------->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<!--<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+	  <li><a href="../feed/lookatmemes.php">FEED</a></li>
+        <li><a href="../login_register_logout/logout.php">LOGOUT</a></li>
+		<li><a href="displayprofile.php">PROFILE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container-fluid navbar-border">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../feed/lookatmemes.php"><i class="fa fa-home"></i></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+		<li><button id="dark"><i class="fa fa-moon-o"></i></button></li>
+		
+		<li>
+          <a href="displayprofile.php"><i class="fa fa-user" style = "font-size: 20px;"></i></a>
+        </li>
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>User profile form requirement</title>
+</head>
+
+<body>
+
+   <div class="container">
+<div class="row">
+<div class="col-md-10 ">
+<form class="form-horizontal" action = "setprofile.php" method = "post" enctype="multipart/form-data">
+<fieldset>
+
+<!-- Form Name -->
+<legend>What are you? Tell Plix</legend>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Name (Full name)">Name (Full name)</label>  
+  <div class="col-md-4">
+ <div class="input-group">
+       <div class="input-group-addon">
+        <i class="fa fa-user">
+        </i>
+       </div>
+       <input id="Name (Full name)" name="name" type="text" placeholder="Name (Full name)" class="form-control input-md">
+      </div>
+
+    
+  </div>
+
+  
+</div>
+
+<!-- File Button --> 
+<div class="form-group">
+  <label class="col-md-4 control-label" for="uploadedimage">Upload photo</label>
+  <div class="col-md-4">
+    <input  name="uploadedimage"  type="file">
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Date Of Birth">Date Of Birth</label>  
+  <div class="col-md-4">
+
+  <div class="input-group">
+       <div class="input-group-addon">
+     <i class="fa fa-birthday-cake"></i>
+        
+       </div>
+       <input id="Date Of Birth" name="dob" type="text" placeholder="Date Of Birth" class="form-control input-md">
+      </div>
+  
+    
+  </div>
+</div>
+
+
+
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Gender">Gender</label>
+  <div class="col-md-4"> 
+    <label class="radio-inline" for="Gender-0">
+      <input type="radio" name="Gender" id="Gender-0" value="1" checked="checked">
+      Male
+    </label> 
+    <label class="radio-inline" for="Gender-1">
+      <input type="radio" name="Gender" id="Gender-1" value="2">
+      Female
+    </label> 
+    <label class="radio-inline" for="Gender-2">
+      <input type="radio" name="Gender" id="Gender-2" value="3">
+      Other
+    </label>
+  </div>
+</div>
+
+
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Overview (max 200 words)">What are you? (max 200 words)</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" rows="10"  id="Overview (max 200 words)" name="description">What are you?</textarea>
+  </div>
+</div>
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label" ></label>  
+  <div class="col-md-4">
+  <!--<a href="setprofile.php" class="btn btn-success"><span class="glyphicon glyphicon-thumbs-up"></span> Submit</a>
+  <a href="#" class="btn btn-danger" value=""><span class="glyphicon glyphicon-remove-sign"></span> Clear</a>-->
+    <input name="Upload Now" type="submit" value="Save">
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div>
+<div class="col-md-2 hidden-xs">
+<img src="http://websamplenow.com/30/userprofile/images/avatar.jpg" class="img-responsive img-thumbnail ">
+  </div>
+
+
+</div>
+   </div>
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+<script>
+$(".navbar-collapse").css({ maxHeight: $(window).height() - $(".navbar-header").height() + "px" });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+/*body{
+	background-image: url("hombak.jpg");
+	background-size: cover;
+	background-color: black;
+}
+
+h2{
+	color: white;
+	font-family: courier;
+	font-size: 5vmin;
+	text-align: center;
+}
+
+p{
+	color: white;
+	font-family: courier;
+	font-size: 2vmin;
+	text-align: center;
+}
+
+label{
+	color: white;
+	font-family: courier;
+	font-size: 2vmin;
+}
+
+.form-control{
+	margin: 2vmin;
+	border-radius: 0.5vmin;
+	border: none;
+	padding: 1vmin;
+}
+
+.form-group{
+	text-align: center;
+}
+
+.btn-primary{
+	font-family: courier;
+	border-radius: 0.5vmin;
+	border: none;
+	padding: 0.5vmin;
+}
+
+.btn-primary:hover{
+	background-color: red;
+	color: white;
+}
+
+.btn-default{
+	font-family: courier;
+	border-radius: 0.5vmin;
+	border: none;
+	padding: 0.5vmin;
+}
+
+.btn-default:hover{
+	background-color: red;
+	color: white;
+}*/
+
+.jumbotron{
+	background-image: url("log.png");
+	max-width: 100%;
+	height: auto;
+	color: black !important;
+}
+
+.btn-primary{
+	background-image: url("log.png") !important;
+	border: none !important;
+}
+
+.btn-primary:hover{
+	color: white !important;
+	transform: scale(1.1);
+}
+
+.navbar {
+    margin-bottom: 0;
+    /*background-color:#e6b800 !important;*/
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+	background-image: url("nav.png");
+	width: 100%;
+	height:auto;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: white !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: black !important;
+    background-color: #f2f2f2 !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+
+.statusmsg{
+    font-size: 12px; /* Set message font size  */
+    padding: 3px; /* Some padding to make some more space for our text  */
+    background: #EDEDED; /* Add a background color to our status message   */
+    border: 1px solid #DFDFDF; /* Add a border arround our status message   */
+	margin-top: 10vmin;
+	text-align: center;
+}
+
+h2{
+	margin-top: 110px !important;
+}

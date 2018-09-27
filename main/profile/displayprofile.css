@@ -1,0 +1,264 @@
+/* NIGHT MODE */
+
+*{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#dark{
+	border : none;
+	background : transparent;
+	padding-top : 4px;
+	padding-right : 15px;
+	color : #93979e;
+	font-size : 2em;
+}
+#dark:hover{
+	color : white;
+}
+
+.darkmode{
+  background-color: #373a3c;
+  color: black;
+  transition: background-color 1s;
+}
+/*NAVBAR STYLES*/
+.navbar-border{border-bottom: solid 2px #a3bf00;}
+.login-panel { 
+    min-width: 250px; 
+    border-top: 14px solid #0080c5;
+    border-right: 1px solid #0080c5;
+    border-bottom-right-radius:0.5em;
+    -moz-border-radius-bottomright:0.5em;
+    border-bottom: 3px solid #0080c5;
+    border-left: 1px solid #0080c5;
+    border-bottom-left-radius:0.5em;
+    -moz-border-radius-bottomleft:0.5em;
+    }
+.dropdown-header { display: block !imnportant; padding-bottom: 30px; height: 10px; }
+.login-header { font-size: 20px; font-weight: bold; display: inline; float: left; }
+.forgot-password { font-size: 10px; display: inline; float: right; vertical-align: bottom; padding-top: 10px; }
+.center-text { text-align: center; }
+.error-message { font-size: 11px; }
+.navbar-collapse i:hover,.navbar-collapse a:hover{
+	color : #a3bf00 !important;
+}
+.navbar-collapse .dropdown-menu li a{
+	background-color : #222;
+	color : #d6d6c2;
+}
+
+.navbar-collapse .dropdown-menu li a:hover{
+	background-color : #222;
+}
+
+.avatar {
+    width: 40px !important;
+    height: 40px !important;
+	margin-top: 0.6vmin !important;
+}
+
+
+#dp{
+	margin-top: 10vmin;
+	border: 10vmin;
+	max-width: 10% !important;
+	transition: 0.2s;
+}
+
+#dp:hover{
+	transform: scale(1.2);
+}
+
+h4{
+	background-color: #ffffcc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.zoom{
+	transition: 0.5s;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+
+.mag{
+	color: transparent;
+	border: none;
+	background-color: transparent;
+}
+
+/* PROF SHOW */
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+.profile 
+{
+    min-height: 355px;
+    display: inline-block;
+    }
+figcaption.ratings
+{
+    margin-top:20px;
+    }
+figcaption.ratings a
+{
+    color:#f1c40f;
+    font-size:11px;
+    }
+figcaption.ratings a:hover
+{
+    color:#f39c12;
+    text-decoration:none;
+    }
+.divider 
+{
+    border-top:1px solid #a8abaf;
+    }
+.emphasis 
+{
+    border-top: 4px solid transparent;
+    }
+.emphasis:hover 
+{
+    border-top: 4px solid #1abc9c;
+    }
+.emphasis h2
+{
+    margin-bottom:0;
+    }
+span.tags 
+{
+    background: #a3bf00;
+    border-radius: 2px;
+    color: #f5f5f5;
+    font-weight: bold;
+    padding: 2px 4px;
+    }
+.dropdown-menu 
+{
+    background-color: #34495e;    
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    width: 250px;
+    margin-left: -125px;
+    left: 50%;
+    }
+.dropdown-menu .divider 
+{
+    background:none;    
+    }
+.dropdown-menu>li>a
+{
+    color:#f5f5f5;
+    }
+.dropup .dropdown-menu 
+{
+    margin-bottom:10px;
+    }
+.dropup .dropdown-menu:before 
+{
+    content: "";
+    border-top: 10px solid #34495e;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -10px;
+    z-index: 10;
+    }
+	
+#folhov:hover{
+		cursor: pointer;
+}
+
+#profbody{
+	width: 100%;
+	max-width: 1200px;
+}
+
+input[type="file"] {
+    display: none !important;
+	opacity: 0;
+}
+
+.custom-file-upload {
+	border: 1px solid;
+    padding:5px;
+    cursor: pointer;
+	margin: 3px;
+}
+
+#shit{
+	padding-left: 30px;
+}
+
+#exp{
+	background-color: #a3bf00;
+	border: 1px black solid;
+	color: white;
+	margin-left: 3px;
+}
+
+.bt{
+	color: white;
+}
+.bt:hover{
+	-ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05); 
+}

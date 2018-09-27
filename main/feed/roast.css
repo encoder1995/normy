@@ -1,0 +1,129 @@
+/* NIGHT MODE */
+#dark{
+	border : none;
+	background : transparent;
+	padding-top : 4px;
+	padding-right : 15px;
+	color : #93979e;
+	font-size : 2em;
+}
+#dark:hover{
+	color : white;
+}
+
+.darkmode{
+  background-color: #373a3c;
+  color: black;
+  transition: background-color 1s;
+}
+/*NAVBAR STYLES*/
+.navbar-border{border-bottom: solid 2px #a3bf00;}
+.login-panel { 
+    min-width: 250px; 
+    border-top: 14px solid #0080c5;
+    border-right: 1px solid #0080c5;
+    border-bottom-right-radius:0.5em;
+    -moz-border-radius-bottomright:0.5em;
+    border-bottom: 3px solid #0080c5;
+    border-left: 1px solid #0080c5;
+    border-bottom-left-radius:0.5em;
+    -moz-border-radius-bottomleft:0.5em;
+    }
+.dropdown-header { display: block !imnportant; padding-bottom: 30px; height: 10px; }
+.login-header { font-size: 20px; font-weight: bold; display: inline; float: left; }
+.forgot-password { font-size: 10px; display: inline; float: right; vertical-align: bottom; padding-top: 10px; }
+.center-text { text-align: center; }
+.error-message { font-size: 11px; }
+.navbar-collapse i:hover,.navbar-collapse a:hover{
+	color : #a3bf00 !important;
+}
+.navbar-collapse .dropdown-menu li a{
+	background-color : #222;
+	color : #d6d6c2;
+}
+
+.navbar-collapse .dropdown-menu li a:hover{
+	background-color : #222;
+}
+
+.avatar {
+    width: 40px !important;
+    height: 40px !important;
+	margin-top: 0.6vmin !important;
+}
+
+.jumbotron{
+	padding-top: 50px !important;
+	font-size: 60px;
+}
+
+/*ROAST BEGINS HERE */
+
+.chat
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chat li
+{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #B3A9A9;
+}
+
+.chat li.left .chat-body
+{
+    margin-left: 60px;
+}
+
+.chat li.right .chat-body
+{
+    margin-right: 60px;
+}
+
+
+.chat li .chat-body p
+{
+    margin: 0;
+    color: #777777;
+}
+
+.panel .slidedown .glyphicon, .chat .glyphicon
+{
+    margin-right: 5px;
+}
+
+.body-panel
+{
+    overflow-y: scroll;
+    height: 250px;
+}
+
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+
+.panel-heading{
+	background-color: #a3bf00 !important;
+	border: none !important
+}
+
+.panel{
+	border: 1px solid #c2c2a3 !important;
+}

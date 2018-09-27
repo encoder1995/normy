@@ -1,0 +1,40 @@
+header{
+	font-family: courier;
+	font-size: 7vmin;
+	text-align: center;
+	color: white;
+}
+
+header:hover{
+	background-color:gray;
+}
+
+#usrform{
+	text-align:center;
+	margin-top: 4vmin;
+	color: white;
+}
+
+button{
+	background-color: transparent;
+	color: white;
+	outline: none;
+	border: none;
+	margin-top: 5px;
+	font-family: courier;
+	font-size: 5vmin;
+}
+
+button:hover{
+	background-color: #b30000;
+}
+
+body{
+	background-image:url("hombak.jpg");
+	background-size: cover;
+}
+
+div.ta {
+        display: flex;
+        justify-content: center;
+    }

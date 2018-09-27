@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="navbar.css">
+</head>
+<body>
+	<div id="navbar">
+		<a href="home.php">Home</a>
+		<div class="dropdown">
+			<button class="dropbtn">Types<i class="fa fa-caret-down"></i></button>
+			<div class="dropdown-content">
+				<a href="lame.php">Lame</a>
+				<a href="advance.php">Advance</a>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</html>

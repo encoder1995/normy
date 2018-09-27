@@ -1,0 +1,120 @@
+/* NIGHT MODE */
+#dark{
+	border : none;
+	background : transparent;
+	padding-top : 4px;
+	padding-right : 15px;
+	color : #93979e;
+	font-size : 2em;
+}
+#dark:hover{
+	color : white;
+}
+
+.darkmode{
+  background-color: #373a3c;
+  color: black;
+  transition: background-color 1s;
+}
+/*NAVBAR STYLES*/
+.navbar-border{border-bottom: solid 2px #a3bf00;}
+.login-panel { 
+    min-width: 250px; 
+    border-top: 14px solid #0080c5;
+    border-right: 1px solid #0080c5;
+    border-bottom-right-radius:0.5em;
+    -moz-border-radius-bottomright:0.5em;
+    border-bottom: 3px solid #0080c5;
+    border-left: 1px solid #0080c5;
+    border-bottom-left-radius:0.5em;
+    -moz-border-radius-bottomleft:0.5em;
+    }
+.dropdown-header { display: block !imnportant; padding-bottom: 30px; height: 10px; }
+.login-header { font-size: 20px; font-weight: bold; display: inline; float: left; }
+.forgot-password { font-size: 10px; display: inline; float: right; vertical-align: bottom; padding-top: 10px; }
+.center-text { text-align: center; }
+.error-message { font-size: 11px; }
+.navbar-collapse i:hover,.navbar-collapse a:hover{
+	color : #a3bf00 !important;
+}
+.navbar-collapse .dropdown-menu li a{
+	background-color : #222;
+	color : #d6d6c2;
+}
+
+.navbar-collapse .dropdown-menu li a:hover{
+	background-color : #222;
+}
+
+.avatar {
+    width: 40px !important;
+    height: 40px !important;
+	margin-top: 0.6vmin !important;
+}
+
+#roastbtn{
+	margin-top: 100px;
+	font-size: 40px;
+	border: none;
+	background: transparent;
+}
+
+#roastbtn:hover{
+	color: #a3bf00;
+}
+
+.darkroast{
+	color: white !important;
+	transition: color 1s;
+}
+
+.darkroast:hover{
+	color: #a3bf00 !important;
+}
+
+ /* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+} 
